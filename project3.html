@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nikki Mamori Project 3</title>
+  </head>
+  <body style="background-color: pink; text-align: center">
+    <img
+      id="cat"
+      style="width: 200px"
+      src="https://static.boredpanda.com/blog/wp-content/uploads/2017/09/saddest-cat-luhu-maggie-liu-lanlan731-38-59c0bfed09657__700.jpg"
+    />
+    <br />
+    <button id="button" style="padding: 20px">Make the cat smile!</button>
+    <h1 id="yay" style="display: none">
+      You did it! Thank you for making the cat smile.
+    </h1>
+    <script>
+      const cat = document.getElementById("cat");
+      const button = document.getElementById("button");
+      const yay = document.getElementById("yay");
+
+      button.addEventListener("click", () => {
+        cat.src =
+          "https://upload.wikimedia.org/wikipedia/commons/0/04/So_happy_smiling_cat.jpg?20181228142032";
+        button.style.display = "none";
+        yay.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
